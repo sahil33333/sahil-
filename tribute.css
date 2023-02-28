@@ -1,0 +1,124 @@
+s/* Slider
+http://www.tribute.com/tribute.html
+*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.slider_container{ width:920px; margin:auto; clear:both; background:url(images/download.jpg) no-repeat top center; padding:30px 0 0 0;}
+.tribute-caption{ position: absolute; right:11px; bottom:20px;}
+.caption_title_line{ width:450px; height:75px; padding:5px 15px 10px 15px;background:url(images/slider_download (1).jpg) repeat;color: #303030;}
+.tribute-caption h2{ color:#303030;font-size:20px; padding:5px 0 5px 0; margin:0px;font-family: 'Ovo', serif;}
+
+.tribute-container a:active,
+.tributeslider a:active {outline: none;}
+.slides,
+.tribute-control-nav,
+.tribute-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* TRIBUTESlider Necessary Styles
+*********************************/ 
+.tributeslider {width: 100%; margin: 0; padding: 0 0 30px 0;background:url(images/shadow_download (18).jpg) no-repeat center bottom;}
+.tributeslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.tributeslider .slides img {max-width: 100%; display: block; border:10px #ededed solid;}
+.tribute-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.tributeslider {position: relative; zoom: 1;}
+.tributeslider .slides {zoom: 1;}
+.tributeslider .slides > li {position: relative;}
+.tribute-container {zoom: 1; position: relative;}
+
+/* Direction Nav */
+.tribute-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:11px; cursor: pointer; text-indent: -9999px;}
+.tribute-direction-nav li a.next {background:url(images/download (18).jpg no-repeat center; bottom:184px;}
+.tribute-direction-nav li a.prev {background:url(images/download (1).jpg) no-repeat center;bottom:141px;}
+.tribute-direction-nav li a.next:hover {background:url(images/download.jpg) no-repeat center;}
+.tribute-direction-nav li a.prev:hover {background:url(images/download (5).jpg) no-repeat center;}
+.tribute-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.tribute-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.tribute-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.tribute-control-nav li:first-child {margin: 0;}
+.tribute-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.tribute-control-nav li a:hover {background-position: 0 -13px;}
+.tribute-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+.slider_container{ width:90%; margin:0 0 0 2%; clear:both; background:none; padding:30px 0 0 0;}
+.tributeslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.tribute-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.tribute-direction-nav li a.next {background:url(images/download (18).jpg) no-repeat center; bottom:85px;}
+.tribute-direction-nav li a.prev {background:url(images/download (1).jpg) no-repeat center;bottom:40px;}
+.tribute-caption { display:none;}
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times, serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 2rem auto;
+  padding: 0px 2rem;
+}
+
+.header {
+  padding: 2rem;
+  margin: 1rem 0px;
+  text-align: center;
+}
+
+header > .title {
+  margin-bottom: 1rem;
+}
+
+.tribute {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  max-width: 78rem;
+  margin: 0px auto;
+  background: white;
+  color: black;
+  align-items: center;
+  padding: 0px 0px 0px 1rem;
+}
+
+.tribute blockquote {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.tribute img {
+  max-width: 100%;
+}
+
+.bio {
+  margin: 2rem auto;
+  padding: 0px 0.5rem;
+  max-width: 40rem;
+}
+
+.bio > h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.bio > p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+
